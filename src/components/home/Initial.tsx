@@ -1,13 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
+import Details from './details/Details'
 
 export default function Initial() {
     return (
-        <section className='w-full h-screen bg-primary text-white flex sm:flex-row items-center sm:justify-around justify-center px-20 flex-col'>
+        <section className='w-full min-h-[485px] h-screen bg-primary text-white flex sm:flex-row items-center sm:justify-around justify-center px-20 flex-col'>
             <div>
                 <h2 className='font-light text-2xl tracking-widest lg:text-left text-center'>
-                    Olá, eu sou <p className='my-7 uppercase text-5xl font-semibold'>Leonardo Oliveira</p>
+                    Olá, eu sou <p className='mt-2 mb-7 uppercase text-5xl font-semibold'>Leonardo Oliveira</p>
                 </h2>
                 <h2 className='font-semibold text-2xl uppercase tracking-widest lg:text-left text-center'>
                     Front-End Developer
@@ -21,9 +21,7 @@ export default function Initial() {
                         GitHub</Link>
                 </div>
             </div>
-            <div>
-                <Image className='hidden sm:flex' src='/leo.png' width={300} height={300} alt='avatar' />
-            </div>
+            <Details/>
         </section>
     )
 }

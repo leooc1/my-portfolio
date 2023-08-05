@@ -1,0 +1,35 @@
+.btn-project{
+    border: 1px solid #ffffff;
+    padding: 3px;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-project::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 100%;
+    /* background-color: #0050c7; */
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+    transform-origin: left;
+}
+
+.btn-project:hover::after{
+    width: 100%;
+}
+
+.btn-project:hover{
+    color: #000000;
+    border-color: #000000;
+    font-weight: bold;
+}

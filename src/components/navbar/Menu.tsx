@@ -29,8 +29,8 @@ export default function Menu() {
     return (
         <>
             <div id='menu' className={`fixed w-full py-3 transition-menu h-0 top-0 z-40 md:hidden flex justify-center items-center`}>
-                <Image id='hmb' className='top-4 right-5 absolute transition-menu'
-                    src={`${hamburger ? '/icon-menu.svg' : '/icon-close.svg'}`} alt="menu" width={40} height={40} onClick={() => toggleMenu()} />
+                <Image id='hmb' className='top-5 right-5 absolute transition-menu'
+                    src={`${hamburger ? '/icon-menu.svg' : '/icon-close.svg'}`} alt="menu" width={25} height={25} onClick={() => toggleMenu()} />
                 <nav id='navbar' className='text-black hidden flex-col gap-8 text-3xl'>
                     <Link onClick={() => { toggleMenu() }} href="#" className={` uppercase font-light text-center`}>
                         Home
