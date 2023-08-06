@@ -11,9 +11,8 @@ export default function Details() {
             <div>
                 <Image className='hidden sm:flex md:hidden w-full' src='/leo.png' width={300} height={300} alt='avatar' />
                 {/*  */}
-                <Canvas className='hidden md:flex' title='Experimente um clique duplo.' style={{ width: '100%', height: '300px', cursor: 'pointer' }}
-                    onDoubleClick={() => setDimension(!dimension)}>
-                    <OrbitControls />
+                <Canvas className='hidden md:flex' style={{ width: '100%', height: '300px', cursor: 'pointer' }}
+                    onClick={() => setDimension(!dimension)}>
                     <ambientLight color={'#fff'} />
                     <pointLight position={[3, 3, 8]} intensity={200} color={'#00f'} />
                     <pointLight position={[-3, -3, -8]} intensity={200} color={'#00f'} />

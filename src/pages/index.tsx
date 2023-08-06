@@ -5,15 +5,17 @@ import Head from 'next/head'
 import Header from '@/components/navbar/Header'
 import Initial from '@/components/home/Initial'
 import Projects from '@/components/projetos/Projects'
+import Sobre from '@/components/Sobre'
+import Contato from '@/components/Contato'
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['200', '300', '400', '500', '600', '700'] })
 
 export default function Home() {
   const [loading, setLoading] = useState(true)
   useEffect(() => {
-    // setInterval(() => {
-      setLoading(false)
-    // }, 1000)
+    setInterval(() => {
+    setLoading(false)
+    }, 1000)
   }, [loading])
   return (
     <>
@@ -27,6 +29,8 @@ export default function Home() {
             <Header />
             <Initial />
             <Projects />
+            <Sobre />
+            <Contato />
           </>
         }
       </main>
