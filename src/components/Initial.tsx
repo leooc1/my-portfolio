@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import Details from './details/Details'
+import Image from 'next/image'
 
 export default function Initial() {
     return (
@@ -13,7 +13,7 @@ export default function Initial() {
                     Front-End Developer
                 </h2>
                 <div className='mt-20 flex justify-around text-white sm:flex-row flex-col gap-8'>
-                    <Link className='bg-[blue] justify-center px-4 py-2 border flex items-center border-white rounded-3xl text-xl hover:shadow-md hover:shadow-[#ffffff69] hover:scale-110 transition-all' href='https://www.linkedin.com/in/leonardo-oliveira-de-castro-b90351250/' target='_blank'>
+                    <Link className='bg-[blue] justify-center px-4 py-2 border flex items-center border-white rounded-3xl text-xl hover:shadow-md hover:shadow-[#ffffff69] hover:scale-110 transition-all' href='https://www.linkedin.com/in/leonardo-oc/' target='_blank'>
                         <svg className='w-7 h-7 mr-2' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z" fill="rgba(255,255,255,1)"></path></svg>
                         LinkedIn</Link>
                     <Link className='bg-black justify-center px-4 py-2 border flex items-center border-white rounded-3xl text-xl hover:shadow-md hover:shadow-[#ffffff69] hover:scale-110 transition-all' href='https://github.com/leooc1' target='_blank'>
@@ -21,7 +21,7 @@ export default function Initial() {
                         GitHub</Link>
                 </div>
             </div>
-            <Details/>
+            <Image className='hidden sm:flex' src='/leo.png' width={300} height={300} alt='avatar' />
         </section>
     )
 }

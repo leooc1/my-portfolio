@@ -12,8 +12,7 @@ export default function Ring3D({color, rotateX, rotateY}){
     return(
         <mesh ref={ringRef} >
             <torusGeometry args={[1.5,0.1,64,64]}/>
-            {/* <meshStandardMaterial color={color} metalness={3} roughness={0.8}/> */}
-            <meshStandardMaterial color={color} metalness={7} roughness={0.4}/>
+            <meshStandardMaterial color={color}/>
         </mesh>
     )
 }

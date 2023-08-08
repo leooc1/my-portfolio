@@ -14,7 +14,6 @@
     display: block;
     width: 0%;
     height: 100%;
-    /* background-color: #0050c7; */
     background-color: #ffffff;
     position: absolute;
     top: 0;
@@ -30,6 +29,5 @@
 
 .btn-project:hover{
     color: #000000;
-    border-color: #000000;
     font-weight: bold;
 }
