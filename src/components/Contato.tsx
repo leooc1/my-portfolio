@@ -21,11 +21,13 @@ export default function Contato() {
 
   return (
     <section id='contato' className='min-h-screen pt-24 pb-10 px-8 text-white flex sm:flex-row flex-col-reverse justify-center items-center gap-8'>
-      <form action="" className='flex flex-col gap-5 w-auto md:w-96'>
+      <form action="" className='flex flex-col gap-5 w-full sm:w-auto md:w-96'>
         <input type="text" name="nome" id="nome" className='bg-[#000019] border border-white py-1 px-2' placeholder='Digite seu nome e sobrenome' />
+        
         <input type="email" name="email" id="email" className='bg-[#000019] border border-white py-1 px-2' placeholder='Digite seu e-mail' />
-        <input type="text" name="assunto" id="assunto" className='bg-[#000019] border border-white py-1 px-2' placeholder='Digite o assunto' />
+        
         <textarea name="mensagem" id="mensagem" cols={30} rows={10} className='bg-[#000019] border border-white py-1 px-2 min-h-[34px]' placeholder='Sua mensagem . . .'></textarea>
+        
         <button type="submit" className='bg-[#000019] border border-white py-1 px-2 w-28 mx-auto'>Enviar</button>
       </form>
       <div>
