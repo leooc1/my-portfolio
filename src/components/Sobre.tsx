@@ -23,7 +23,7 @@ export default function Sobre() {
   }
 
   return (
-    <section id='sobre' className='flex justify-center items-center py-20'>
+    <section id='sobre' className='flex justify-center items-center pt-24 pb-20'>
         <div className='bg-gray-800 w-[90%] min-w-[300px] md:w-[600px] min-h-[300px] rounded-xl'>
             <h2 className='bg-neutral-900 w-full text-white font-extralight py-1 text-center relative rounded-t-xl'>
                 <div className='w-3 h-3 rounded-full absolute bg-red-600 -translate-y-1/2 top-1/2 left-1'></div>
