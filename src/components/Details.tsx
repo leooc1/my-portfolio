@@ -12,7 +12,7 @@ export default function Details() {
                     onClick={() => setDimension(!dimension)}>
                     <ambientLight color={'#fff'} intensity={100}/>
                     <mesh>
-                        <ReactLogo type={dimension} />
+                        <ReactLogo type={dimension} />  
                     </mesh>
                 </Canvas>
             </div>
