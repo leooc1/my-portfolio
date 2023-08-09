@@ -1,7 +1,7 @@
 import { useFrame } from "@react-three/fiber"
 import { useRef } from "react"
 
-export default function Ring2D({color, rotateZ}){
+export default function Ring({color, rotateZ}){
     const ringRef = useRef()
 
     useFrame(()=>{

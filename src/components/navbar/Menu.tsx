@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 
-export default function Menu() {
+export default function Menu({ theme }: { theme: string }) {
     const [hamburger, setHamburger] = useState(true)
 
     function toggleMenu() {
@@ -17,7 +17,8 @@ export default function Menu() {
 
         const menu = document.querySelector('#menu')
         menu?.classList.toggle('h-0')
-        menu?.classList.toggle('bg-white')
+        if (theme === 'dark') { menu?.classList.toggle('bg-white') }
+        else { menu?.classList.toggle('bg-primary') }
         menu?.classList.toggle('h-96')
         const navbar = document.querySelector('#navbar')
         setTimeout(() => {
@@ -29,9 +30,9 @@ export default function Menu() {
     return (
         <>
             <div id='menu' className={`fixed w-full py-3 transition-menu h-0 top-0 z-40 md:hidden flex justify-center items-center`}>
-                <Image id='hmb' className='top-5 right-5 absolute transition-menu cursor-pointer'
+                <Image id='hmb' className={`top-5 right-5 absolute transition-menu cursor-pointer ${theme === 'dark' ? '' : 'invert'}`}
                     src={`${hamburger ? '/icon-menu.svg' : '/icon-close.svg'}`} alt="menu" width={25} height={25} onClick={() => toggleMenu()} />
-                <nav id='navbar' className='text-black hidden flex-col gap-8 text-3xl'>
+                <nav id='navbar' className={`${theme==='dark'?'text-primary':'text-gray-200'} hidden flex-col gap-8 text-3xl`}>
                     <Link onClick={() => { toggleMenu() }} href="#" className={` uppercase font-light text-center`}>
                         Home
                     </Link>

@@ -1,4 +1,4 @@
-.btn-project{
+.btn-project-dark{
     border: 1px solid #ffffff;
     padding: 3px;
     width: 200px;
@@ -9,7 +9,7 @@
     transition: 0.3s ease-in-out;
 }
 
-.btn-project::after{
+.btn-project-dark::after{
     content: "";
     display: block;
     width: 0%;
@@ -23,11 +23,47 @@
     transform-origin: left;
 }
 
-.btn-project:hover::after{
+.btn-project-dark:hover::after{
     width: 100%;
 }
 
-.btn-project:hover{
-    color: #000000;
+.btn-project-dark:hover{
+    color: #030023;
+    font-weight: bold;
+}
+
+/* ************************************************ */
+
+.btn-project-light{
+    border: 1px solid #030023;
+    padding: 3px;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-project-light::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 100%;
+    background-color: #030023;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+    transform-origin: left;
+}
+
+.btn-project-light:hover::after{
+    width: 100%;
+}
+
+.btn-project-light:hover{
+    color: #fff;
     font-weight: bold;
 }

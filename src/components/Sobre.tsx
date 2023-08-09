@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-export default function Sobre() {
+export default function Sobre({theme}:{theme:string}) {
   useEffect(() => {
     lastLogin()
   }, [])
