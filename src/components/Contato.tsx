@@ -24,7 +24,7 @@ export default function Contato({ theme }: { theme: string }) {
     <section id='contato' className={`min-h-screen pt-24 pb-10 px-8 ${theme === 'dark' ? 'text-white' : 'text-primary'} flex sm:flex-row flex-col-reverse justify-center items-center gap-8`}>
       <Form theme={theme}/>
       <div>
-        <p className='text-3xl font-light pb-5 text-center'>E-mail para contato</p>
+        <p className='text-3xl font-normal pb-5 text-center'>E-mail para contato</p>
         <div className='flex items-center justify-center'>
           <p id='copy' className='font-light'>leonardoocvrb@gmail.com</p>
           <button onClick={handleCopyClick} className={`${theme === 'dark' ? 'bg-[#000019]' : 'bg-gray-200'} border-2 ${theme === 'dark' ? 'border-white' : 'border-primary'} ml-4 p-1 rounded-md relative`}>{svg}

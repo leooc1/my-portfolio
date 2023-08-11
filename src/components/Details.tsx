@@ -7,7 +7,7 @@ export default function Details({ theme }: { theme: string }) {
     return (
         <>
             <div>
-                <Canvas className='hidden sm:flex' style={{ width: '100%', height: '300px', cursor: 'pointer' }}
+                <Canvas title='Clique para rodar/parar' className='hidden sm:flex' style={{ width: '100%', height: '300px', cursor: 'pointer' }}
                     onClick={() => setRotation(!rotation)}>
                     <ambientLight color={'#fff'} intensity={10} />
                     {theme === 'dark' ?
