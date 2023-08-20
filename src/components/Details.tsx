@@ -12,11 +12,11 @@ export default function Details({ theme }: { theme: string }) {
                     <ambientLight color={'#fff'} intensity={10} />
                     {theme === 'dark' ?
                         <pointLight position={[2, 2, 2]} color={'#fff'} intensity={90} /> :
-                        <pointLight position={[2, 2, 2]} color={'#00f'} intensity={120} />
+                        <pointLight position={[2, 2, 2]} color={'#00f'} intensity={200} />
                     }
 
                     <mesh>
-                        <ReactLogo rotation={rotation} />
+                        <ReactLogo rotation={rotation} theme={theme}/>
                     </mesh>
                 </Canvas>
             </div>

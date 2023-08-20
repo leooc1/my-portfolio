@@ -11,7 +11,7 @@ export default function Initial({ theme }: { theme: string }) {
                     Olá, eu sou <p className='mt-2 mb-7 uppercase text-5xl font-semibold'>Leonardo Oliveira</p>
                 </h2>
                 <h2 className='font-semibold text-2xl uppercase tracking-widest lg:text-left text-center'>
-                    Front-End Developer
+                    Desenvolvedor Front-End
                 </h2>
                 <div className='mt-20 flex justify-around text-white sm:flex-row flex-col gap-8'>
                     <Link className={`bg-[blue] justify-center px-4 py-2 border flex items-center ${theme === 'dark' ? 'border-white' : 'border-black'} rounded-3xl text-xl hover:shadow-md ${theme === 'dark' ? 'hover:shadow-[#ffffff69]' : 'hover:shadow-[#00000069]'} hover:scale-110 transition-all`} href='https://www.linkedin.com/in/leonardo-oc/' target='_blank'>
@@ -22,7 +22,7 @@ export default function Initial({ theme }: { theme: string }) {
                         GitHub</Link>
                 </div>
             </div>
-            <Image className='hidden sm:flex' src='/leo.png' width={300} height={300} alt='avatar' />
+            <Image className='hidden sm:flex rounded-b-full' src='/profile-wanted-removebg.png' width={300} height={300} alt='avatar' />
         </section>
     )
 }
